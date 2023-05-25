@@ -1,0 +1,72 @@
+.app {
+  text-align: center;
+  align-content: center;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.app-header {
+  text-align: left;
+  padding: 10px 10px 10px 5%;
+  max-height: 10vh;
+  background-image: linear-gradient(to bottom right, #C3CB5D, #977FD7, #DE5B49);
+  color: black;
+}
+
+.app-link {
+  color: black;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.app-header h2 {
+  margin: 0;
+}
+
+.wrapper p {
+  margin: 10px;
+  padding: 50px;
+}
+
+p span {
+  display: block;
+  margin: 2px;
+}
+
+.slide {
+  padding: 5px;
+  min-height: 40vh;
+  border-bottom: solid black;
+  border-top: solid black;
+}
+
+.slick-slide > div {
+  padding: 0 5px;
+}
+
+.slick-center {
+  font-weight: bold;
+  -webkit-transform: scale(1.30);
+  -moz-transform: scale(1.30);
+  transform: scale(1.30);
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
