@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './style.css'
 
+import RenderTip from './components/tip'
 import tips from './tips'
 
 const keys = {
@@ -32,10 +33,7 @@ export default function App() {
         <h2>
           Interview Tips and Advice
         </h2>
-        <a
-          className='app-link'
-          href='https://github.com/bramey-git'
-        >
+        <a className='app-link' href='https://github.com/bramey-git'>
           <small>By: BRamey </small>
         </a>
       </header>
@@ -43,14 +41,7 @@ export default function App() {
         <h2>Know Yourself!</h2>
         <Slider {...settings}>
           {tips.selfTips.map((advice) => {
-            return (
-              <div className='wrapper' key={advice.headline}>
-                <p>
-                  <span> ~ {advice.headline}</span>
-                  {advice.tip}
-                </p>
-              </div>
-            );
+            return RenderTip(advice)
           })}
         </Slider>
       </div>
@@ -58,14 +49,7 @@ export default function App() {
         <h2>Know Your Opportunity! </h2>
         <Slider {...settings}>
           {tips.opportunityTips.map((advice) => {
-            return (
-              <div className='wrapper' key={advice.headline} >
-                <p>
-                  <span> ~ {advice.headline}</span>
-                  {advice.tip}
-                </p>
-              </div>
-            );
+            return RenderTip(advice)
           })}
         </Slider>
       </div>
@@ -73,14 +57,7 @@ export default function App() {
         <h2>Be Prepared! </h2>
         <Slider {...settings}>
           {tips.preparationTips.map((advice) => {
-            return (
-              <div className='wrapper' key={advice.headline} >
-                <p>
-                  <span> ~ {advice.headline}</span>
-                  {advice.tip}
-                </p>
-              </div>
-            );
+            return RenderTip(advice)
           })}
         </Slider>
       </div>
