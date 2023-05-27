@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Launches the test runner watch mode.
 
-A React Project By: Bramey
+A React Project By: B Ramey
